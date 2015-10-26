@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <include 
+        layout = "@layout/otherheader"
+        />
+
+    <LinearLayout 
+        android:id="@+id/emailview"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="8dp"
+    	android:background="@drawable/emailedit_bg"
+    	android:layout_margin="10dp"
+    	android:gravity="center_vertical"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/black"
+    		android:textSize="@dimen/normalsize"
+    		android:text="@string/linkemail"
+            />
+        <EditText 
+            android:id="@+id/email_edit"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:background="@color/white"
+    		android:textSize="@dimen/normalsize"
+    		android:textColor="@color/light_black"
+    		android:singleLine="true"
+    		android:hint="@string/input_email"
+            />
+    </LinearLayout>
+    
+    <EditText 
+        android:id="@+id/content_edit"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:lines="10"
+    	android:hint="@string/input_complainreason"
+    	android:background="@drawable/contentedit_bg"
+    	android:padding="8dp"
+    	android:textColor="@color/black"
+    	android:textSize="@dimen/normalsize"
+    	android:gravity="start"
+    	android:lineSpacingExtra="5dp"
+    	android:layout_margin="10dp"
+        />
+</LinearLayout>

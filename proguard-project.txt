@@ -1,0 +1,68 @@
+# To enable ProGuard in your project, edit project.properties
+# to define the proguard.config property as described in that file.
+#
+# Add project specific ProGuard rules here.
+# By default, the flags in this file are appended to flags specified
+# in ${sdk.dir}/tools/proguard/proguard-android.txt
+# You can edit the include path and order by changing the ProGuard
+# include property in project.properties.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# Add any project specific keep options here:
+
+-libraryjars libs/google-play-services.jar
+-libraryjars libs/ksoap2.jar
+-libraryjars libs/pinyin4j.jar
+-libraryjars libs/googlemaps.jar
+-libraryjars libs/imageloader.jar
+-libraryjars libs/MobLogCollector.jar
+-libraryjars libs/ShareSDK-Core-2.6.1.jar
+-libraryjars libs/ShareSDK-Facebook-2.6.1.jar
+-libraryjars libs/ShareSDK-Twitter-2.6.1.jar
+
+-dontwarn com.google.android.**
+-dontwarn android_maps_conflict_avoidance.**
+-dontwarn com.nostra13.**
+-dontwarn org.kobjects.**
+-dontwarn org.ksoap2.**
+-dontwarn org.kxml2.**
+-dontwarn org.xmlpull.**
+-dontwarn com.mob.**
+-dontwarn com.hp.hpl.**
+-dontwarn demo.**
+-dontwarn net.sourceforge.**
+-dontwarn cn.sharesdk.**
+-dontwarn cn.smssdk.**
+-dontwarn com.kyleduo.**
+-dontwarn net.simonvt.**
+-dontwarn android.**
+-dontwarn a.a.a.**
+-dontwarn android.support.**
+
+-keep class com.google.android.**{*;}
+-keep class android_maps_conflict_avoidance.**{*;}
+-keep class com.nostra13.**{*;}
+-keep class org.kobjects.**{*;}
+-keep class org.ksoap2.**{*;}
+-keep class org.kxml2.**{*;}
+-keep class org.xmlpull.**{*;}
+-keep class com.mob.**{*;}
+-keep class com.hp.hpl.**{*;}
+-keep class demo.**{*;}
+-keep class net.sourceforge.**{*;}
+-keep class cn.sharesdk.**{*;}
+-keep class cn.smssdk.**{*;}
+-keep class com.kyleduo.**{*;}
+-keep class net.simonvt.**{*;}
+-keep class android.**{*;}
+-keep class a.a.a.**{*;}
+-keep class android.support.**{*;}
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}

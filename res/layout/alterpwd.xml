@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/alter"
+    android:orientation="vertical" >
+    
+    <TextView 
+            android:layout_width="fill_parent"
+    		android:layout_height="wrap_content"
+    		android:text="@string/p_input"
+    		android:textColor="@color/white"
+    		android:gravity="center_vertical"
+    		android:textSize="@dimen/bigsize"
+    		android:textStyle="bold"
+    		android:padding="10dp"
+    		android:background="@drawable/topround_bluebg"
+            />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:padding="5dp"
+    	android:visibility="gone"
+        >
+        <TextView 
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/current_pwd"
+    		android:textColor="@color/black"
+    		android:gravity="center_vertical"
+    		android:textSize="@dimen/normalsize"
+            />
+        <EditText 
+            android:id="@+id/edit1"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:hint="@string/input_oldpwd"
+    		android:textColor="@color/black"
+    		android:padding="8dp"
+    		android:textSize="@dimen/normalsize"
+    		android:background="@color/white"
+            />
+    </LinearLayout>
+    
+    <View
+        android:visibility="gone"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+    
+    <LinearLayout 
+        android:padding="5dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView 
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:text="@string/new_pwd"
+    		android:textColor="@color/black"
+    		android:gravity="center_vertical"
+    		android:textSize="@dimen/normalsize"
+            />
+        <EditText 
+            android:id="@+id/edit2"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:hint="@string/input_newpwd"
+    		android:textColor="@color/black"
+    		android:padding="8dp"
+    		android:background="@color/white"
+    		android:textSize="@dimen/normalsize"
+    		style="@style/editStyle1"
+            />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+    
+    <LinearLayout 
+        android:padding="5dp"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+        <TextView 
+            android:paddingLeft="5dp"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textColor="@color/black"
+    		android:text="@string/sure_pwd"
+    		android:gravity="center_vertical"
+    		android:textSize="@dimen/normalsize"
+            />
+        <EditText 
+            android:id="@+id/edit3"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:hint="@string/input_newpwda"
+    		android:textColor="@color/black"
+    		android:padding="8dp"
+    		android:textSize="@dimen/normalsize"
+    		android:background="@color/white"
+    		style="@style/editStyle1"
+            />
+    </LinearLayout>
+    
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3" />
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+        >
+    <Button 
+        android:id="@+id/p_button"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:padding="10dp"
+    	android:textSize="@dimen/normalsize"
+    	android:textColor="@color/top_blue"
+    	android:text="@string/sure"
+    	android:background="@color/transparent"
+        />
+    <View
+        android:layout_width="1px"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@color/gray3" />
+    <Button 
+        android:id="@+id/n_button"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_weight="1"
+    	android:textSize="@dimen/normalsize"
+    	android:textColor="@color/top_blue"
+    	android:padding="10dp"
+    	android:text="@string/cancle"
+    	android:background="@color/transparent"
+        />
+
+    </LinearLayout>
+</LinearLayout>

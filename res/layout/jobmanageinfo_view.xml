@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <include 
+        layout = "@layout/otherheader"
+        />
+    
+    <include 
+        android:id="@+id/to_jobinfoview"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        layout = "@layout/newjob_item"
+        />
+
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+    
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="2dp"
+    	android:background="@color/top_blue"
+        android:layout_marginTop="15dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/white"
+    	android:orientation="vertical"
+        >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="10dp"
+        >
+        <TextView 
+                android:id="@+id/mhirecount"
+	            android:layout_width="wrap_content"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="@dimen/normalsize"
+	    		android:textColor="@color/top_blue"
+	            android:gravity="center"
+	    		android:text="@string/lycount0"
+	    		android:layout_alignParentLeft="true"
+	    		android:visibility="gone"
+	    		android:layout_marginLeft="10dp"
+	    		android:layout_centerVertical="true"
+            />
+        
+        <LinearLayout 
+            android:id="@+id/action_linear"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_marginLeft="10dp"
+    		android:layout_centerVertical="true"
+    		android:layout_alignParentRight="true"
+    		android:visibility="gone"
+            >
+        
+        <TextView 
+            android:id="@+id/action_text"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="@dimen/normalsize"
+    		android:textColor="@color/white"
+    		android:text="@string/zhm"
+    		android:background="@drawable/bluebutton_selector"
+    		android:padding="5dp"
+            />
+        
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/statusview"
+            android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_toLeftOf="@id/action_linear"
+    		android:layout_centerVertical="true"
+            >
+            <TextView 
+                android:id="@+id/applycount"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="@dimen/smallsize"
+	    		android:textColor="@color/top_blue"
+	    		android:text="@string/shqcount0"
+	            android:gravity="center"
+            />
+            <TextView 
+                android:id="@+id/hirecount"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="@dimen/smallsize"
+	    		android:textColor="@color/top_blue"
+	            android:gravity="center"
+	    		android:text="@string/lycount0"
+            />
+            <TextView 
+                android:id="@+id/refusecount"
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	    		android:text="@string/jjcount0"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="@dimen/smallsize"
+	    		android:textColor="@color/top_blue"
+	            android:gravity="center"
+            />
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:paddingLeft="10dp"
+    	android:paddingRight="10dp"
+    	android:paddingTop="7dp"
+    	android:paddingBottom="7dp"
+    	android:background="@color/top_blue"
+        >
+        <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="@dimen/normalsize"
+	    		android:textColor="@color/white"
+	    		android:text="@string/allname"
+	    		android:singleLine="true"
+            />
+        <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="@dimen/normalsize"
+	    		android:textColor="@color/white"
+	    		android:text="@string/linkphones"
+	    		android:singleLine="true"
+            />
+        <TextView 
+	            android:layout_width="0dp"
+	            android:layout_weight="1"
+	            android:gravity="center"
+	    		android:layout_height="wrap_content"
+	    		android:textSize="@dimen/normalsize"
+	    		android:textColor="@color/white"
+	    		android:text="@string/state"
+            />
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+    <com.jianzhiniu.views.XListView
+	     android:id="@+id/xlistview"
+	     android:layout_width="match_parent"
+    	 android:layout_height="match_parent"
+    	 android:cacheColorHint="#00000000"
+    	 android:scrollbars="vertical"
+    	 android:divider="@color/gray3"
+    	 android:background="@color/white"
+    	 android:dividerHeight="1px"
+    	 android:listSelector="#00000000"
+	 ></com.jianzhiniu.views.XListView>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="fill_parent"
+          android:layout_height="44dp"
+          android:background="@color/gray"
+          android:padding="7dp"
+          >
+         
+		  <EditText
+              android:id="@+id/search"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:textSize="16dp"
+              android:paddingLeft="40dp"
+              android:paddingRight="40dp"
+              android:hint="@string/search"
+              android:background="@drawable/search_edit"
+              android:singleLine="true"
+               />          
+                   
+           <ImageView 
+              android:id="@+id/search_image"
+              android:layout_width="16dp"
+              android:layout_height="16dp"
+              android:src="@drawable/search"
+              android:layout_marginLeft="10dp"
+              android:layout_centerVertical="true"
+              />
+                 
+          <TextView 
+              android:id="@+id/t_delete"
+             android:layout_width="40dp"
+   			 android:layout_height="40dp"
+   			android:layout_alignParentRight="true"
+   			android:layout_centerVertical="true"
+   			android:gravity="center"
+   			android:text="X"
+   			android:textSize="16dp"
+   			android:textColor="@color/top_blue"
+            />
+        
+             <View 
+               android:layout_width="1px"
+   			   android:layout_height="match_parent"
+   			   android:layout_toLeftOf="@id/t_delete"
+   			   android:layout_marginTop="5dp"
+   			   android:layout_marginBottom="5dp"
+   			   android:background="@color/gray4"
+               />
+          
+          
+   </RelativeLayout>

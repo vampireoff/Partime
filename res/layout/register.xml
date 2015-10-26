@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <include 
+        layout = "@layout/otherheader"
+        />
+
+    <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         >
+        
+		<EditText
+             android:id="@+id/phonenum_edit"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/normalsize"
+             android:paddingLeft="85dp"
+             android:paddingRight="100dp"
+             android:hint="@string/input_phonenums"
+             style="@style/editStylephone"
+             android:layout_centerVertical="true"
+             android:paddingTop="8dp"
+             android:paddingBottom="8dp"
+             android:background="@drawable/stroke_gray3"
+              />          
+                  
+          <TextView
+              android:id="@+id/phonenum_text"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:text="@string/phonenum"
+             android:textColor="@color/black"
+             android:gravity="center"
+             android:textSize="@dimen/normalsize" 
+             android:layout_centerVertical="true"
+             />
+          <TextView
+              android:id="@+id/verify_btn"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:text="@string/get_verifynum"
+             android:textColor="@color/white"
+             android:textSize="15.0dip" 
+             android:paddingTop="3dp"
+             android:paddingBottom="3dp"
+             android:gravity="center"
+             android:layout_marginRight="7dp"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:background="@drawable/verifybtn_bgo"
+             />
+          
+          <View 
+             android:layout_width="1px"
+             android:layout_height="18dp"
+             android:layout_centerVertical="true"
+             android:background="@color/top_blue"
+             android:layout_toRightOf="@id/phonenum_text"
+              />
+     </RelativeLayout>
+     
+    <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         >
+        
+		<EditText
+             android:id="@+id/verifynum_edit"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/normalsize"
+             android:paddingLeft="85dp"
+             android:paddingRight="10dp"
+             android:hint="@string/input_verifynum"
+             style="@style/editStyle1"
+             android:inputType="number"
+             android:layout_centerVertical="true"
+             android:paddingTop="8dp"
+             android:paddingBottom="8dp"
+             android:background="@drawable/stroke_gray3"
+              />          
+                  
+          <TextView
+              android:id="@+id/verifynum_text"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="@string/verifynum"
+             android:textColor="@color/black"
+             android:textSize="@dimen/normalsize" 
+             android:layout_centerVertical="true"
+             />
+          
+          <View 
+             android:layout_width="1px"
+             android:layout_height="18dp"
+             android:layout_centerVertical="true"
+             android:background="@color/top_blue"
+             android:layout_toRightOf="@id/verifynum_text"
+              />
+     </RelativeLayout>
+     
+    <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="10dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         >
+        
+		<EditText
+             android:id="@+id/pwd_edit"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/normalsize"
+             android:paddingLeft="85dp"
+             android:paddingRight="10dp"
+             android:hint="@string/input_pwd"
+             style="@style/editStyle1"
+             android:layout_centerVertical="true"
+             android:paddingTop="8dp"
+             android:paddingBottom="8dp"
+             android:background="@drawable/stroke_gray3"
+              />          
+                  
+          <TextView
+              android:id="@+id/pwd_text"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:text="@string/password"
+             android:textColor="@color/black"
+             android:textSize="@dimen/normalsize" 
+             android:layout_centerVertical="true"
+             />
+          
+          <View 
+             android:layout_width="1px"
+             android:layout_height="18dp"
+             android:layout_centerVertical="true"
+             android:background="@color/top_blue"
+             android:layout_toRightOf="@id/pwd_text"
+              />
+     </RelativeLayout>
+     
+    <LinearLayout 
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+    <CheckBox 
+        android:id="@+id/checkbox"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:text="@string/alreadyread"
+        />
+    
+    <TextView 
+        android:id="@+id/agreement_text"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textSize="15dp"
+        android:text="@string/agreement"
+        android:textColor="@color/blue"
+        />
+    </LinearLayout>
+    
+    <Button 
+        android:layout_marginTop="15dp"
+        android:id="@+id/register_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="8dp"
+        android:gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/register"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:background="@drawable/topbluebutton_selector"
+        />
+</LinearLayout>

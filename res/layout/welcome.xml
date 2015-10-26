@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    <ImageView 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:layout_centerInParent="true"
+    	android:src="@drawable/welcome"
+    	android:scaleType="centerCrop"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/lin_button"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal"
+    	android:layout_alignParentBottom="true"
+    	android:layout_marginBottom="30dp"
+    	android:visibility="gone"
+        >
+        <LinearLayout 
+            android:layout_width="0dp"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+            <Button
+		        android:id="@+id/button_p"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/jobseeker_enter"
+		    	android:padding="10dp"
+		    	android:textColor="@color/top_blue"
+		    	android:textSize="18dp"
+		    	android:gravity="center"
+		    	android:background="@drawable/guidebutton_selector"
+		        ></Button>
+        </LinearLayout>
+    
+        <LinearLayout 
+            android:layout_width="0dp"
+    		android:layout_height="wrap_content"
+    		android:layout_weight="1"
+    		android:gravity="center_horizontal"
+            >
+            <Button
+		        android:id="@+id/button_e"
+		    	android:gravity="center"
+		        android:layout_width="wrap_content"
+		    	android:layout_height="wrap_content"
+		    	android:text="@string/enterprise_enter"
+		    	android:padding="10dp"
+		    	android:textSize="18dp"
+		    	android:textColor="@color/top_blue"
+		    	android:background="@drawable/guidebutton_selector"
+		        ></Button>
+        </LinearLayout>
+    
+    
+    </LinearLayout>
+
+</RelativeLayout>

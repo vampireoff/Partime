@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+     <include 
+        layout = "@layout/otherheader"
+        />
+    
+     <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         >
+        
+		<EditText
+             android:id="@+id/pwd_edit"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/normalsize"
+             android:paddingLeft="85dp"
+             android:paddingRight="10dp"
+             android:hint="@string/input_newpwd"
+             style="@style/editStyle1"
+             android:layout_centerVertical="true"
+             android:paddingTop="8dp"
+             android:paddingBottom="8dp"
+             android:background="@drawable/stroke_gray3"
+              />          
+                  
+          <TextView
+              android:id="@+id/pwd_text"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:text="@string/newpassword"
+             android:gravity="center_horizontal"
+             android:textColor="@color/black"
+             android:textSize="@dimen/normalsize" 
+             android:layout_centerVertical="true"
+             />
+          
+          <View 
+             android:layout_width="1px"
+             android:layout_height="18dp"
+             android:layout_centerVertical="true"
+             android:background="@color/top_blue"
+             android:layout_toRightOf="@id/pwd_text"
+              />
+     </RelativeLayout>
+     
+      <RelativeLayout
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+         android:layout_marginRight="10dp"
+         >
+        
+		<EditText
+             android:id="@+id/pwdt_edit"
+             android:layout_width="fill_parent"
+             android:layout_height="wrap_content"
+             android:textSize="@dimen/normalsize"
+             android:paddingLeft="85dp"
+             android:paddingRight="10dp"
+             android:hint="@string/reinput_newpwd"
+             style="@style/editStyle1"
+             android:layout_centerVertical="true"
+             android:paddingTop="8dp"
+             android:paddingBottom="8dp"
+             android:background="@drawable/stroke_gray3"
+              />          
+                  
+          <TextView
+              android:id="@+id/pwdt_text"
+             android:layout_width="80dp"
+             android:layout_height="wrap_content"
+             android:text="@string/reconfirm"
+             android:gravity="center_horizontal"
+             android:textColor="@color/black"
+             android:textSize="@dimen/normalsize" 
+             android:layout_centerVertical="true"
+             />
+          
+          <View 
+             android:layout_width="1px"
+             android:layout_height="18dp"
+             android:layout_centerVertical="true"
+             android:background="@color/top_blue"
+             android:layout_toRightOf="@id/pwdt_text"
+              />
+     </RelativeLayout>
+     
+     <Button 
+         android:id="@+id/next_btn"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dp"
+         android:padding="8dp"
+         android:text="@string/submit"
+         android:textSize="15dp"
+         android:textColor="@color/white"
+         android:background="@drawable/topbluebutton_selector"
+         android:gravity="center"
+         />
+
+</LinearLayout>

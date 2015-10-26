@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    
+    <LinearLayout 
+        android:id="@+id/bottomview"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+        >
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+    <TextView 
+        android:id="@+id/jtcanclebtn"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="12dp"
+    	android:gravity="center"
+    	android:textColor="@color/top_blue"
+    	android:textSize="@dimen/normalsize"
+    	android:text="@string/cancel"
+    	android:background="@drawable/bottomround_bg"
+        />
+	</LinearLayout>
+    
+    <LinearLayout 
+        android:layout_above="@id/bottomview"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+        >
+    
+    <TextView 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="10dp"
+    	android:gravity="center"
+    	android:textColor="@color/top_blue"
+    	android:textSize="@dimen/normalsize"
+    	android:text="@string/please_select"
+    	android:background="@drawable/topround_bg"
+        />
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+    
+    <ListView
+                android:id="@+id/dialoglist"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/gray3"
+                android:listSelector="@color/transparent"
+                android:dividerHeight="1px"
+                />
+    </LinearLayout>
+    
+</RelativeLayout>

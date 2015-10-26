@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        layout = "@layout/otherheader"
+        />
+    
+    <RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent" >
+    <include 
+        layout="@layout/search_bar"
+        android:layout_width="fill_parent"
+	    android:layout_height="44dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/search_edittext"/>
+   
+    <View 
+        android:id="@+id/v_div"
+        android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:layout_below="@id/search_edittext"
+	    android:background="@color/gray3"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/location_linear"
+        android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@id/v_div"
+	    android:background="@color/white"
+	    android:orientation="vertical"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:padding="8dp"
+            >
+        <TextView 
+	    android:id="@+id/location_text"
+	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="7dp"
+	    android:textColor="@color/top_blue"
+	    android:textSize="18sp"
+	    android:layout_centerVertical="true"
+	    android:text="@string/getlocationing"
+	    android:enabled="false"
+	    />
+        
+        <ImageView 
+            android:id="@+id/location_fresh_s"
+            android:layout_width="20dp"
+    		android:layout_height="20dp"
+    		android:layout_centerVertical="true"
+    		android:layout_alignParentRight="true"
+    		android:src="@drawable/refresh"
+            />
+        </RelativeLayout>
+        <View 
+        android:layout_width="match_parent"
+	    android:layout_height="1px"
+	    android:background="@color/top_blue"
+        />
+    </LinearLayout>
+    
+    <RelativeLayout 
+        android:id="@+id/contact_list"
+        android:layout_below="@id/location_linear"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/right"
+        android:scrollbars="none"
+        android:dividerHeight="1px"
+        android:divider="@color/gray2"
+        android:listSelector="#00000000"
+        android:cacheColorHint="#00000000" >
+    </ListView>
+    <LinearLayout 
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+	    android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        >
+        <View 
+        android:layout_width="1px"
+	    android:layout_height="match_parent"
+	    android:background="@color/top_blue"
+        />
+	<com.jianzhiniu.views.IndexBar
+	    android:id="@+id/ib"
+	    android:layout_height="match_parent"
+	    android:background="@drawable/indaxbar_selector"
+	    android:layout_width="20dp">
+	</com.jianzhiniu.views.IndexBar>
+	</LinearLayout>
+	<TextView 
+	    android:id="@+id/tvShow"
+	    android:layout_width="70dp"
+        android:layout_height="70dp"
+	    android:background="@drawable/tvshow_shape"
+	    android:gravity="center"
+	    android:textColor="#ffffff"
+	    android:visibility="gone"
+	    android:textSize="50sp"
+	    android:layout_centerInParent="true" />
+	</RelativeLayout>
+</RelativeLayout>
+
+</LinearLayout>

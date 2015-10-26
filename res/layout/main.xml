@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id="@+id/maintop"
+        layout = "@layout/mainheader" />
+
+    <RelativeLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        >
+	      <View 
+	          android:id="@+id/bottomdivide"
+	        android:layout_width="match_parent"
+	    	android:layout_height="1px" 
+	    	android:background="@color/gray3"
+	         />
+	      
+         <LinearLayout
+             android:layout_below="@id/bottomdivide"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"   
+            android:paddingTop="5dp"         
+        	>
+        	
+            <LinearLayout
+            	android:id="@+id/shouye1_linear"
+            	android:layout_width="0dp"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_weight="1">               	
+                <ImageView
+                    android:id="@+id/shouye1_img"
+        			android:layout_width="25dp"
+        			android:layout_height="25dp"        	     	
+        			android:scaleType="fitXY"
+        			android:src="@drawable/shouye1p" />
+                <TextView
+                    android:id="@+id/shouye1_text"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/firstpage"
+            		android:textColor="@color/top_blue"
+            		android:singleLine="true"
+            		android:textSize="13dp" />                
+        	 </LinearLayout>
+        	 <LinearLayout
+           		android:id="@+id/shouye2_linear"
+            	android:layout_width="0dp"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_weight="1">               	
+                <ImageView
+                    android:id="@+id/shouye2_img"
+        			android:layout_width="25dp"
+        			android:layout_height="25dp"        	     	
+        			android:scaleType="fitXY"
+        			android:src="@drawable/shouye2" />
+                <TextView
+                    android:id="@+id/shouye2_text"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/newestjob"
+            		android:singleLine="true"
+            		android:textColor="@color/bottom_text"
+            		android:textSize="13dp" />                
+        	 </LinearLayout>
+        	 <LinearLayout
+           		android:id="@+id/shouye3_linear"
+            	android:layout_width="0dp"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_weight="1">     
+              	<FrameLayout 
+              	    android:layout_width="34dp"
+            		android:layout_height="wrap_content"
+              	    >
+                <ImageView
+                    android:id="@+id/shouye3_img"
+        			android:layout_width="25dp"
+        			android:layout_height="25dp"        	     	
+        			android:scaleType="fitXY"
+        			android:layout_gravity="center_horizontal"
+        			android:src="@drawable/shouye3" />
+                <ImageView 
+        	     android:id="@+id/reddot"
+           		 android:layout_width="10dp"
+           		 android:layout_height="10dp"
+           		 android:src="@drawable/msg_bg"
+           		 android:layout_gravity="right|top"
+           		 android:visibility="gone"
+        	     />
+              	</FrameLayout>          	
+                <TextView
+                    android:id="@+id/shouye3_text"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/assistant"
+            		android:textColor="@color/bottom_text"
+            		android:singleLine="true"
+            		android:textSize="13dp" />                
+        	 </LinearLayout>
+        	 
+        	 <LinearLayout
+           		android:id="@+id/shouye4_linear"
+            	android:layout_width="0dp"
+            	android:layout_height="wrap_content"
+              	android:gravity="center_horizontal"
+              	android:orientation="vertical"
+              	android:layout_weight="1">               	
+                <ImageView
+                    android:id="@+id/shouye4_img"
+        			android:layout_width="25dp"
+        			android:layout_height="25dp"        	     	
+        			android:scaleType="fitXY"
+        			android:src="@drawable/shouye4" />
+                <TextView
+                    android:id="@+id/shouye4_text"
+            		android:layout_width="wrap_content"
+            		android:layout_height="wrap_content"
+            		android:text="@string/personalcenter"
+            		android:textColor="@color/bottom_text"
+            		android:singleLine="true"
+            		android:textSize="13dp" />                
+        	 </LinearLayout>      
+        </LinearLayout>     
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/main_viewpage"
+        android:layout_width="fill_parent"
+    	android:layout_height="match_parent" 
+    	android:layout_above="@id/main_bottom"
+    	android:layout_below="@id/maintop"
+        android:orientation="vertical" >
+        
+        <com.jianzhiniu.views.MyViewPager
+        	android:id="@+id/tabpager"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:layout_gravity="center" > 
+        </com.jianzhiniu.views.MyViewPager>  
+        
+    </LinearLayout>
+</RelativeLayout>

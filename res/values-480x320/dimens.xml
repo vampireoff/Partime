@@ -1,0 +1,8 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="indexbar_size">11dp</dimen>
+	<dimen name="dialogpadding">50px</dimen>
+    <dimen name="versiondialogpadding">50px</dimen>
+    <dimen name="adverheight">180dp</dimen>
+</resources>

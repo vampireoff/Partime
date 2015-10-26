@@ -1,0 +1,162 @@
+# view res/layout/interest_view.xml #generated:12
+# view res/layout/jobinfo_mainview.xml #generated:17
+# view res/layout/jobmanage_view.xml #generated:119
+# view res/layout/layout_slideshow.xml #generated:11
+# view res/layout/myjob_view.xml #generated:87
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class cn.smssdk.SMSSDKUIShell { <init>(...); }
+
+# view res/layout/smssdk_contact_list_page.xml #generated:13
+-keep class cn.smssdk.gui.ContactsListView { <init>(...); }
+
+# view res/layout/smssdk_country_list_page.xml #generated:13
+-keep class cn.smssdk.gui.CountryListView { <init>(...); }
+
+# view res/layout/googlemap_view.xml #generated:12
+-keep class com.google.android.gms.maps.SupportMapFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:219
+-keep class com.jianzhiniu.activity.ApplyFollowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:212
+-keep class com.jianzhiniu.activity.ConsultReplyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:169
+-keep class com.jianzhiniu.activity.ContentEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:241
+-keep class com.jianzhiniu.activity.EnterCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:155
+-keep class com.jianzhiniu.activity.GoogleMapActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:91
+-keep class com.jianzhiniu.activity.GuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.jianzhiniu.activity.InterestJobActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.jianzhiniu.activity.JobInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:204
+-keep class com.jianzhiniu.activity.JobIssueActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:263
+-keep class com.jianzhiniu.activity.JobManInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.jianzhiniu.activity.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:270
+-keep class com.jianzhiniu.activity.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.jianzhiniu.activity.MyApplyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:176
+-keep class com.jianzhiniu.activity.MyCollectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:183
+-keep class com.jianzhiniu.activity.MyJobActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:148
+-keep class com.jianzhiniu.activity.NearbyJobActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:197
+-keep class com.jianzhiniu.activity.NewMessageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.jianzhiniu.activity.NewestJobActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:233
+-keep class com.jianzhiniu.activity.PersonalCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:106
+-keep class com.jianzhiniu.activity.RegisterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class com.jianzhiniu.activity.ResetpwdActivityOne { <init>(...); }
+
+# view AndroidManifest.xml #generated:134
+-keep class com.jianzhiniu.activity.ResetpwdActivityThree { <init>(...); }
+
+# view AndroidManifest.xml #generated:127
+-keep class com.jianzhiniu.activity.ResetpwdActivityTwo { <init>(...); }
+
+# view AndroidManifest.xml #generated:249
+-keep class com.jianzhiniu.activity.SelectCitysActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:190
+-keep class com.jianzhiniu.activity.SettingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.jianzhiniu.activity.WebViewActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.jianzhiniu.activity.WelcomeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.jianzhiniu.config.MyApplication { <init>(...); }
+
+# view res/layout/mycollect_view.xml #generated:11
+-keep class com.jianzhiniu.fragments.MyCollectFragment { <init>(...); }
+
+# view res/layout/newestjob_view.xml #generated:11
+-keep class com.jianzhiniu.fragments.NewFragment { <init>(...); }
+
+# view res/layout/mainfragment.xml #generated:13
+-keep class com.jianzhiniu.views.AdBannerView { <init>(...); }
+
+# view res/layout/selectcitys_view.xml #generated:100
+-keep class com.jianzhiniu.views.IndexBar { <init>(...); }
+
+# view res/layout/jobinfo_view.xml #generated:553
+-keep class com.jianzhiniu.views.MyListview { <init>(...); }
+
+# view res/layout/main.xml #generated:148
+-keep class com.jianzhiniu.views.MyViewPager { <init>(...); }
+
+# view res/layout/entercenter_view.xml #generated:37
+# view res/layout/login.xml #generated:115
+# view res/layout/personalcenter_view.xml #generated:92
+# view res/layout/personalfragment.xml #generated:35
+-keep class com.jianzhiniu.views.RoundImageView { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.jianzhiniu.views.SelectPicPopupWindow { <init>(...); }
+
+# view res/layout/auth_view.xml #generated:7
+# view res/layout/jobmanage1_fview.xml #generated:7
+# view res/layout/jobmanage2_fview.xml #generated:7
+# view res/layout/jobmanage3_fview.xml #generated:7
+# view res/layout/jobmanageinfo_view.xml #generated:174
+# view res/layout/myapply_view.xml #generated:11
+# view res/layout/myjobend_fview.xml #generated:7
+# view res/layout/myjobonway_fview.xml #generated:7
+# view res/layout/nearbyjob_view.xml #generated:48
+# view res/layout/newfragment.xml #generated:105
+# view res/layout/newmessage_view.xml #generated:11
+# view res/layout/recommend_view.xml #generated:7
+-keep class com.jianzhiniu.views.XListView { <init>(...); }
+
+# view res/layout/issuejob_view.xml #generated:610
+# view res/layout/setting_view.xml #generated:34
+-keep class com.kyleduo.switchbutton.SwitchButton { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.mob.tools.MobUIShell { <init>(...); }
+
+# view res/layout/smssdk_contacts_listview_item.xml #generated:10
+-keep class com.mob.tools.gui.AsyncImageView { <init>(...); }
+
+# view res/layout/datedialog.xml #generated:29
+# view res/layout/datedialog.xml #generated:35
+# view res/layout/datedialog.xml #generated:42
+-keep class net.simonvt.numberpicker.NumberPicker { <init>(...); }
+
+# view res/layout/number_picker_with_selector_wheel.xml #generated:22
+-keep class net.simonvt.numberpicker.NumberPicker$CustomEditText { <init>(...); }
+

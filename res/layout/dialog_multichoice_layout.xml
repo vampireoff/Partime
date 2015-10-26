@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    >
+
+
+        <RelativeLayout
+            android:id="@+id/topview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/topround_bluebg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:layout_alignParentTop="true"
+            >
+
+            <TextView
+                android:id="@+id/multichoic_title"
+                style="@style/text_18_ffffff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chooseall"
+                android:layout_centerVertical="true"
+                />
+
+	        <CheckBox
+                android:layout_centerVertical="true"
+		        android:id="@+id/chk_selectall"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:checked="false"
+		        android:focusable="false"/>
+            
+        </RelativeLayout>
+
+        <LinearLayout 
+            android:id="@+id/buttonview"
+            android:layout_alignParentBottom="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+	        <View 
+	            android:layout_width="fill_parent"
+            	android:layout_height="1px"
+            	android:background="@color/gray3"
+	            />
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/positiveButton"
+                style="@style/text_15_ffffff_sdw"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="13dp"
+                android:background="@color/transparent"
+                android:text="@string/sure"
+                />
+
+            <View
+	            android:layout_width="1px"
+	            android:layout_height="20dp"
+	            android:layout_gravity="center"
+	            android:background="@color/gray3" />
+            
+            <Button
+                android:id="@+id/negativeButton"
+                style="@style/text_15_666666_sdw"
+                android:text="@string/cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="13dp"
+                android:background="@color/transparent"
+                />
+        </LinearLayout>
+        </LinearLayout>
+        
+         <LinearLayout
+            android:id="@+id/content"
+            android:layout_above="@id/buttonview"
+            android:layout_below="@id/topview"
+            android:background="@color/white"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <ListView
+                android:id="@+id/multichoiceList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/gray3"
+                android:listSelector="@drawable/listview_back"
+                android:dividerHeight="1px"
+                />
+            
+            <View 
+	            android:layout_width="fill_parent"
+            	android:layout_height="1px"
+            	android:background="@color/gray3"
+	            />
+        </LinearLayout>
+
+</RelativeLayout>

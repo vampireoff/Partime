@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <include 
+        layout = "@layout/otherheader"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/topinfoview"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="vertical"
+        >
+        <include 
+        android:id="@+id/to_jobinfoview"
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+        layout = "@layout/newjob_item"
+        />
+
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+    </LinearLayout>
+    
+    
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="2dp"
+    	android:background="@color/top_blue"
+        android:layout_marginTop="15dp"
+        />
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:background="@color/white"
+    	android:orientation="vertical"
+        >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:padding="10dp"
+        >
+        <TextView 
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="@dimen/normalsize"
+    		android:textColor="@color/black"
+    		android:text="@string/applyfollow"
+    		android:layout_centerVertical="true"
+            />
+        <LinearLayout 
+            android:id="@+id/cr_linear"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal"
+    		android:layout_alignParentRight="true"
+    		android:layout_centerVertical="true"
+            >
+        
+        <TextView 
+            android:id="@+id/cancle_text"
+            android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:textSize="@dimen/normalsize"
+    		android:textColor="@color/white"
+    		android:text="@string/cancleapply"
+    		android:background="@drawable/bluebutton_selector"
+    		android:padding="5dp"
+    		
+            />
+        
+        </LinearLayout>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/round1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no" />
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dot" />
+
+                <ImageView
+                    android:id="@+id/round2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no" />
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dot" />
+                
+                <ImageView
+                    android:id="@+id/round3"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/no" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/af_status1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:textColor="@color/black"
+                    android:text="@string/noapply"
+                    android:textSize="@dimen/normalsize" />
+
+                <TextView
+                    android:id="@+id/af_status2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:text="@string/waitforlooked"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalsize" />
+
+                <TextView
+                    android:id="@+id/af_status3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="48dp"
+                    android:text="@string/waitconfirm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/normalsize" />
+            </LinearLayout>
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:id="@+id/af_rightview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/linearLayout1"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/af_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/bottom_text"
+                android:textSize="@dimen/smallsize" />
+
+        <TextView
+            android:id="@+id/af_content2"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bottom_text"
+            android:lines="2"
+            android:ellipsize="end"
+            android:textSize="@dimen/smallsize" />
+        
+        <TextView
+            android:id="@+id/af_content3"
+            android:layout_marginTop="35dp"
+            android:ellipsize="end"
+            android:lines="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bottom_text"
+            android:textSize="@dimen/smallsize" />
+        
+        </LinearLayout>
+    </RelativeLayout>
+	<View 
+        android:layout_width="match_parent"
+    	android:layout_height="1px"
+    	android:background="@color/gray3"
+        />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical" >
+    
+    <include 
+        layout = "@layout/otherheader"
+        />
+    
+    <View 
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3"
+        />
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:padding="10dp"
+        >
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/messagepush"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/normalsize"
+	        android:layout_centerVertical="true"
+            />
+        
+        <com.kyleduo.switchbutton.SwitchButton
+	        android:id="@+id/onoff_push"
+   			android:layout_alignParentRight="true"
+   			android:layout_centerVertical="true"
+	        android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	        style="@style/SwitchButtonStyle" />
+    </RelativeLayout>
+
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3"
+        />
+    
+    <RelativeLayout 
+        android:id="@+id/alterpwd_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listview_back"
+        android:padding="10dp"
+        >
+        <TextView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/alterpwd"
+	        android:textColor="@color/black"
+	        android:textSize="@dimen/normalsize"
+	        android:layout_centerVertical="true"
+            />
+        
+        <ImageView
+   			android:layout_alignParentRight="true"
+   			android:layout_centerVertical="true"
+	        android:layout_width="30dp"
+	    	android:layout_height="30dp"
+	    	android:scaleType="fitXY"
+	    	android:src="@drawable/toicon"
+	        />
+    </RelativeLayout>
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray3"
+        />
+</LinearLayout>

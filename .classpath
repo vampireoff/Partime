@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="com.android.ide.eclipse.adt.ANDROID_FRAMEWORK"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.DEPENDENCIES"/>
+	<classpathentry kind="lib" path="libs/google-play-services.jar"/>
+	<classpathentry kind="lib" path="libs/googlemaps.jar"/>
+	<classpathentry kind="lib" path="libs/imageloader.jar"/>
+	<classpathentry kind="lib" path="libs/ksoap2.jar"/>
+	<classpathentry kind="lib" path="libs/MobLogCollector.jar"/>
+	<classpathentry kind="lib" path="libs/pinyin4j.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Core-2.6.1.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Facebook-2.6.1.jar"/>
+	<classpathentry kind="lib" path="libs/ShareSDK-Twitter-2.6.1.jar"/>
+	<classpathentry kind="src" path="gen"/>
+	<classpathentry exported="true" kind="con" path="com.android.ide.eclipse.adt.LIBRARIES"/>
+	<classpathentry kind="output" path="bin/classes"/>
+</classpath>

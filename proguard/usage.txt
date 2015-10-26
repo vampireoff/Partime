@@ -1,0 +1,197 @@
+com.jianzhiniu.activity.ApplyFollowActivity:
+    private boolean isCancle
+com.jianzhiniu.activity.BaseActivity:
+    68:69:public void setNeedBackGesture(boolean)
+com.jianzhiniu.activity.BaseFragmentActivity:
+    57:58:public void setNeedBackGesture(boolean)
+com.jianzhiniu.activity.BuildConfig
+com.jianzhiniu.activity.GoogleMapActivity:
+    float dis
+com.jianzhiniu.activity.JobInfoActivity:
+    private com.jianzhiniu.network.MapUtil mapUtil
+    169:236:public void ExecuteAsyncTask(java.lang.String,java.util.Map)
+    47:47:static synthetic void access$3(com.jianzhiniu.activity.JobInfoActivity,java.util.Map)
+    47:47:static synthetic java.util.Map access$4(com.jianzhiniu.activity.JobInfoActivity)
+com.jianzhiniu.activity.JobInfoActivity$2
+com.jianzhiniu.activity.JobIssueActivity:
+    private android.content.SharedPreferences$Editor editor
+com.jianzhiniu.activity.MainActivity:
+    381:382:public void registerMyTouchListener(com.jianzhiniu.activity.MainActivity$MyTouchListener)
+    390:391:public void unRegisterMyTouchListener(com.jianzhiniu.activity.MainActivity$MyTouchListener)
+com.jianzhiniu.activity.Manifest
+com.jianzhiniu.activity.Manifest$permission
+com.jianzhiniu.activity.MyJobActivity:
+    private int flag
+com.jianzhiniu.activity.NewMessageActivity:
+    private java.lang.String itemtitle
+com.jianzhiniu.activity.R:
+    10:10:public R()
+com.jianzhiniu.activity.R$anim
+com.jianzhiniu.activity.R$array
+com.jianzhiniu.activity.R$attr
+com.jianzhiniu.activity.R$color
+com.jianzhiniu.activity.R$dimen
+com.jianzhiniu.activity.R$drawable
+com.jianzhiniu.activity.R$id
+com.jianzhiniu.activity.R$layout
+com.jianzhiniu.activity.R$raw
+com.jianzhiniu.activity.R$string
+com.jianzhiniu.activity.R$style
+com.jianzhiniu.activity.R$styleable:
+    1812:1812:public R$styleable()
+com.jianzhiniu.activity.ResetpwdActivityTwo:
+    196:201:public boolean isMobile(java.lang.String)
+com.jianzhiniu.adapter.CheckAdapter:
+    57:57:public android.view.View getItemView(int)
+com.jianzhiniu.adapter.FragmentViewPagerAdapter:
+    80:80:public int getCurrentPageIndex()
+    84:84:public com.jianzhiniu.adapter.FragmentViewPagerAdapter$OnExtraPageChangeListener getOnExtraPageChangeListener()
+com.jianzhiniu.adapter.MyApplylistAdapter:
+    java.lang.String dist
+    int distance
+com.jianzhiniu.config.Common
+com.jianzhiniu.config.MyApplication:
+    37:37:public int getCount()
+com.jianzhiniu.config.Myconfig:
+    3:3:public Myconfig()
+com.jianzhiniu.entity.AdInfo:
+    private java.lang.String advLink
+    private java.lang.String advType
+    private java.lang.String modelId
+    private java.lang.String channelName
+    private java.lang.Integer adRes
+    15:23:public AdInfo(org.json.JSONObject)
+    25:28:public AdInfo(int)
+    45:45:public java.lang.String getAdvLink()
+    50:51:public void setAdvLink(java.lang.String)
+    55:55:public java.lang.String getAdvType()
+    60:61:public void setAdvType(java.lang.String)
+    70:71:public void setAdvDesc(java.lang.String)
+    75:75:public java.lang.String getModelId()
+    80:81:public void setModelId(java.lang.String)
+    85:85:public java.lang.String getChannelName()
+    90:91:public void setChannelName(java.lang.String)
+    95:95:public java.lang.Integer getAdRes()
+    100:101:public void setAdRes(java.lang.Integer)
+com.jianzhiniu.fragments.MainFragment:
+    private static final int AD_ONCLICK
+    private static final int DOWNLOAD
+    private static final int DOWNLOAD_FINISH
+com.jianzhiniu.fragments.NewFragment:
+    private boolean isCloseBroad
+com.jianzhiniu.fragments.PersonalFragment:
+    private static final int DOWNLOAD
+    private static final int DOWNLOAD_FINISH
+com.jianzhiniu.network.HttpConnect:
+    private static final int DEFAULT_BITMAP_TIMEOUT
+    private static final int DEFAULT_TIMEOUT
+    private static final int HTTP_STATE_OK
+    public static final java.lang.String ENCODING
+    private static final int BUFFER_SIZE
+    37:37:public HttpConnect()
+    153:153:public static android.graphics.drawable.BitmapDrawable getHttpDrawable(java.lang.String)
+    189:223:public static java.lang.String postHttpString(java.lang.String,java.util.List,java.util.List,int)
+    243:243:public static java.lang.String postHttpString(java.lang.String,java.util.List,int)
+    260:260:public static java.lang.String postHttpString(java.lang.String,java.util.List)
+    276:305:public static java.lang.String getHttpString(java.lang.String,java.util.List,int)
+    320:320:public static java.lang.String getHttpString(java.lang.String,int)
+    335:335:public static java.lang.String getHttpString(java.lang.String)
+    340:350:public static byte[] readStream(java.io.InputStream)
+    362:419:public static java.lang.String postHttpString(java.lang.String,java.util.Map)
+    431:478:public static void postLogHttpString(java.lang.String,java.util.Map)
+com.jianzhiniu.network.JsonTool:
+    18:18:public JsonTool()
+com.jianzhiniu.network.NetworkUtil:
+    11:11:public NetworkUtil()
+    18:19:public static java.lang.String convertUrlToFileName(java.lang.String)
+    44:60:public static boolean isWifiActive(android.content.Context)
+com.jianzhiniu.network.WSUtil:
+    22:22:public WSUtil()
+com.jianzhiniu.utils.ConstantUtil:
+    public static final java.lang.String RESULT_SUCCESS
+    public static final java.lang.String RESULT_FAIL
+    5:5:public ConstantUtil()
+com.jianzhiniu.utils.ImageCacheUtils:
+    private static final int JPG_FILE_FORMAT
+    private static final int PNG_FILE_FORMAT
+    12:12:public ImageCacheUtils()
+    201:201:public static java.lang.String getPicUrl()
+com.jianzhiniu.utils.ImageUtil:
+    private java.lang.String imageName
+    private java.io.File updateFile
+    52:52:public static com.jianzhiniu.utils.ImageUtil getInstance()
+    201:215:public static android.graphics.Bitmap roundCorners(android.graphics.Bitmap,float)
+    236:259:public android.graphics.Bitmap returnBitMap(java.lang.String)
+    268:297:public static android.graphics.Bitmap getBitMap2(android.graphics.Bitmap)
+    323:338:public void doFile(java.lang.String)
+    356:372:public static void MysaveBitmapToDisk(java.lang.String,android.graphics.Bitmap,java.lang.String)
+    386:404:public boolean saveBitmapToDisk(java.lang.String,android.graphics.Bitmap,java.lang.String)
+    415:426:public static android.graphics.Bitmap getDiskBitmap(java.lang.String)
+    442:487:public android.net.Uri getImageURI(java.lang.String,java.lang.String)
+    503:548:public java.lang.String getImageURI2(java.lang.String,java.lang.String)
+    567:613:public android.net.Uri getImageURI2(java.lang.String,java.lang.String,java.lang.String)
+    626:636:public java.lang.String saveBefore(java.lang.String,int)
+    650:681:public java.lang.String saveBefore22(java.lang.String,float)
+    694:763:public java.lang.String saveBefore33(java.lang.String,java.lang.String)
+    816:841:public android.graphics.Bitmap zoomBitmap2(android.graphics.Bitmap,int)
+    854:869:public android.graphics.Bitmap zoomBitmap3(android.graphics.Bitmap,int)
+    884:899:public android.graphics.Bitmap zoomBitmap2Height(android.graphics.Bitmap,int)
+    912:930:public boolean checkSize(java.lang.String,float)
+    940:947:public android.graphics.Bitmap getRoundBitmap(android.graphics.drawable.Drawable)
+    958:980:public android.graphics.Bitmap drawableToBitmap(android.graphics.drawable.Drawable)
+    989:995:public int getDrawId(java.lang.String)
+    1034:1042:public android.graphics.Bitmap zoomBitmap(android.graphics.Bitmap,int,int)
+    1049:1073:public android.graphics.Bitmap toAutoSize(android.graphics.Bitmap,float,float)
+    1080:1101:public android.graphics.Bitmap toAutoSizeWithWid(android.graphics.Bitmap,float,float)
+    1107:1118:public android.graphics.Bitmap toGrayscale(android.graphics.Bitmap)
+com.jianzhiniu.utils.MyLocationManager:
+    private static final int MINTIME
+    private static final int MININSTANCE
+    69:69:public android.location.Location getMyLocation()
+com.jianzhiniu.utils.MyUtils:
+    19:19:public MyUtils()
+    114:117:public static int getheight(android.app.Activity)
+com.jianzhiniu.utils.PingYinUtil:
+    17:17:public PingYinUtil()
+    59:68:public static java.lang.String ToDBC(java.lang.String)
+    78:83:public static java.lang.String stringFilter(java.lang.String)
+com.jianzhiniu.views.AdBannerView:
+    private static final int IMAGE_COUNT
+    private static final int TIME_INTERVAL
+    private static final boolean isAutoPlay
+    132:133:private void stopPlay()
+    390:400:private void destoryBitmaps()
+com.jianzhiniu.views.CustomMultiChoiceDialog:
+    32:33:public CustomMultiChoiceDialog(android.content.Context)
+com.jianzhiniu.views.CustomMultiChoiceDialog$Builder:
+    61:62:public com.jianzhiniu.views.CustomMultiChoiceDialog$Builder setMessage(java.lang.String)
+    66:66:public android.widget.ListView getListView()
+    84:85:public com.jianzhiniu.views.CustomMultiChoiceDialog$Builder setMessage(int)
+    107:108:public com.jianzhiniu.views.CustomMultiChoiceDialog$Builder setTitle(java.lang.String)
+    112:113:public com.jianzhiniu.views.CustomMultiChoiceDialog$Builder setContentView(android.view.View)
+    129:131:public com.jianzhiniu.views.CustomMultiChoiceDialog$Builder setPositiveButton(java.lang.String,android.content.DialogInterface$OnClickListener)
+    141:143:public com.jianzhiniu.views.CustomMultiChoiceDialog$Builder setNegativeButton(java.lang.String,android.content.DialogInterface$OnClickListener)
+com.jianzhiniu.views.MyProgressDialog:
+    18:18:public MyProgressDialog()
+com.jianzhiniu.views.ViewPagerScroller:
+    22:23:public void setScrollDuration(int)
+    32:33:public ViewPagerScroller(android.content.Context,android.view.animation.Interpolator)
+    37:38:public ViewPagerScroller(android.content.Context,android.view.animation.Interpolator,boolean)
+com.jianzhiniu.views.XFooterView:
+    public static final int STATE_NORMAL
+    public static final int STATE_READY
+    public static final int STATE_LOADING
+    47:49:public XFooterView(android.content.Context,android.util.AttributeSet)
+    147:149:public void normal()
+    155:157:public void loading()
+com.jianzhiniu.views.XHeaderView:
+    public static final int STATE_NORMAL
+    public static final int STATE_READY
+    public static final int STATE_REFRESHING
+    52:54:public XHeaderView(android.content.Context,android.util.AttributeSet)
+com.jianzhiniu.views.XListView:
+    private static final int SCROLL_BACK_HEADER
+    private static final int SCROLL_BACK_FOOTER
+    private static final int SCROLL_DURATION
+    private static final int PULL_LOAD_MORE_DELTA
+    private static final float OFFSET_RADIO

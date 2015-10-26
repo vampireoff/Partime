@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/listview_back"
+    android:padding="10dp"
+	>
+    
+    <ImageView 
+        android:id="@+id/assist_img"
+        android:layout_width="40dp"
+    	android:layout_height="40dp"
+    	android:src="@drawable/assis1"
+    	android:scaleType="fitXY"
+    	android:layout_centerVertical="true"
+        />
+
+    <TextView 
+        android:id="@+id/assist_text"
+    	android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/assist_img"
+        android:layout_marginLeft="15dp"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:textColor="@color/black"
+    	android:textSize="17dp"
+        />
+    
+    <ImageView 
+        android:id="@+id/atoimg"
+        android:layout_width="30dp"
+    	android:layout_height="30dp"
+    	android:layout_centerVertical="true"
+    	android:src="@drawable/toicon"
+    	android:scaleType="fitXY"
+    	android:layout_alignParentRight="true"
+        />
+    
+    <ImageView 
+        android:id="@+id/areddot"
+        android:layout_width="10dp"
+    	android:layout_height="10dp"
+    	android:src="@drawable/msg_bg"
+    	android:layout_centerVertical="true"
+    	android:layout_toLeftOf="@id/atoimg"
+    	android:layout_marginRight="5dp"
+    	android:visibility="gone"
+        />
+</RelativeLayout>

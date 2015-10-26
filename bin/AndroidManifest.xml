@@ -1,0 +1,278 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jianzhiniu.activity"
+    android:installLocation="auto"
+    android:versionCode="5"
+    android:versionName="1.4" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="17" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+    
+     <uses-feature
+	  		android:glEsVersion="0x00020000"
+	  		android:required="true"/>
+     
+    <permission
+          android:name="com.googlemap.activity.permission.MAPS_RECEIVE"
+          android:protectionLevel="signature"/>
+    <uses-permission android:name="com.googlemap.activity.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RIDE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    
+    <application
+        android:name="com.jianzhiniu.config.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <meta-data
+    		android:name="com.google.android.maps.v2.API_KEY"
+    		android:value="AIzaSyCNB2FjkcN4p0B0HobxHGLpEzqwvroQA0k"/>
+        
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+			 android:name="com.mob.tools.MobUIShell"
+			 android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			 android:configChanges="keyboardHidden|orientation|screenSize"
+			 android:screenOrientation="portrait"
+			 android:windowSoftInputMode="stateHidden|adjustResize" >
+			 <intent-filter>
+				 <data android:scheme="tencent100371282" />
+				 <action android:name="android.intent.action.VIEW" />
+				 <category android:name="android.intent.category.BROWSABLE" />
+				 <category android:name="android.intent.category.DEFAULT" />
+ 			 </intent-filter>
+ 		</activity>
+ 		
+        <activity
+			android:name="cn.smssdk.SMSSDKUIShell"
+			android:configChanges="keyboardHidden|orientation|screenSize"
+			android:theme="@android:style/Theme.Translucent.NoTitleBar"
+			android:windowSoftInputMode="stateHidden|adjustResize" />
+ 		
+        <!-- 图片选择界面 -->
+        <activity 
+            android:name="com.jianzhiniu.views.SelectPicPopupWindow" 
+            android:theme="@style/MyDialogStyleBottom" /> 
+        
+        <!-- 引导界面 -->
+        <activity
+            android:name=".GuideActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 个人登录界面 -->
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            ></activity>
+        <!-- 企业登录界面 -->
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 我的申请界面 -->
+        <activity
+            android:name=".MyApplyActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 重置密码界面1 -->
+        <activity
+            android:name=".ResetpwdActivityOne"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 重置密码界面2 -->
+        <activity
+            android:name=".ResetpwdActivityTwo"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 重置密码界面3 -->
+        <activity
+            android:name=".ResetpwdActivityThree"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 感兴趣界面 -->
+        <activity
+            android:name=".InterestJobActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 附近兼职界面 -->
+        <activity
+            android:name=".NearbyJobActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 谷歌地图界面 -->
+        <activity
+            android:name=".GoogleMapActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 工作详情界面 -->
+        <activity
+            android:name=".JobInfoActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 内容编辑界面 -->
+        <activity
+            android:name=".ContentEditActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 我的收藏界面 -->
+        <activity
+            android:name=".MyCollectActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 我的兼职界面 -->
+        <activity
+            android:name=".MyJobActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 设置界面 -->
+        <activity
+            android:name=".SettingActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 最新消息界面 -->
+        <activity
+            android:name=".NewMessageActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 发布兼职界面 -->
+        <activity
+            android:name=".JobIssueActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 咨询回复界面 -->
+        <activity
+            android:name=".ConsultReplyActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 报名跟踪界面 -->
+        <activity
+            android:name=".ApplyFollowActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 网页加载界面 -->
+        <activity
+            android:name=".WebViewActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Widget.WebView"
+            ></activity>
+        <!-- 个人中心界面 -->
+        <activity
+            android:name=".PersonalCenterActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme.Light"
+            ></activity>
+        <!-- 企业中心界面 -->
+        <activity
+            android:name=".EnterCenterActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="stateHidden|adjustResize" 
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            ></activity>
+        <!-- 城市选择界面 -->
+        <activity
+            android:name=".SelectCitysActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 最新兼职界面 -->
+        <activity
+            android:name=".NewestJobActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 兼职管理详情界面 -->
+        <activity
+            android:name=".JobManInfoActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            ></activity>
+        <!-- 主界面 -->
+        <activity
+            android:name=".MainActivity"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:screenOrientation="portrait"
+            ></activity>
+    </application>
+
+</manifest>
