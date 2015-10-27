@@ -30,6 +30,11 @@ import com.jianzhiniu.network.WebServiceUIAsyncTask;
 import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 
+/**
+ * ×¢²á½çÃæ
+ * @author Administrator
+ *
+ */
 public class RegisterActivity extends BaseActivity{
 	
 	private TextView getverify, agreement, topTextView;

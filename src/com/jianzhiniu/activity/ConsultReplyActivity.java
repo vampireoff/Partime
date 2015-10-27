@@ -30,6 +30,11 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
+/**
+ * 咨询回复界面
+ * @author Administrator
+ *
+ */
 public class ConsultReplyActivity extends BaseActivity{
 
 	private Activity activity = ConsultReplyActivity.this;
@@ -137,7 +142,7 @@ public class ConsultReplyActivity extends BaseActivity{
 			public void onGetDataSuccessfulDoInUI(String result) {
 				// TODO Auto-generated method stub
 				//成功获取数据，解析数据
-				if (webtype.equals("info")) {
+				if (webtype.equals("info")) {	//工作信息
 					infomap = JsonTool.JobInfojson(result, "JobInfo");
 					if (infomap == null) {
 						MyUtils.showToast2(activity, getResources().
@@ -157,7 +162,7 @@ public class ConsultReplyActivity extends BaseActivity{
 							MyUtils.showToast2(activity, infomap.get("msg"));
 						}
 					}
-				}else {
+				}else {		//咨询回复列表
 					MyProgressDialog.Dismiss();
 					xlist = JsonTool.ConsultListjson(result, "JobQuestionList");
 					if (xlist == null) {
@@ -251,7 +256,7 @@ public class ConsultReplyActivity extends BaseActivity{
 			jIntent.putExtra("eid", infomap.get("entid"));
 			startActivity(jIntent);
 			break;
-		case R.id.cr_linear:
+		case R.id.cr_linear:	//进入编辑界面
 			Intent ccIntent = new Intent(activity, ContentEditActivity.class);
 			if (intent.getBooleanExtra("ise", false)) {
 				ccIntent.putExtra("type", "reply");
@@ -267,6 +272,9 @@ public class ConsultReplyActivity extends BaseActivity{
 		}
 	}
 	
+	/**
+	 * 提交回复后刷新列表
+	 */
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		// TODO Auto-generated method stub

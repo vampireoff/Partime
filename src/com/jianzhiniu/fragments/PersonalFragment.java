@@ -61,6 +61,11 @@ import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.RoundImageView;
 import com.jianzhiniu.views.MyAlertDialog.AlertCallback;
 
+/**
+ * 个人中心fragment
+ * @author Administrator
+ *
+ */
 public class PersonalFragment extends Fragment implements OnClickListener{
 
 	private Activity activity;

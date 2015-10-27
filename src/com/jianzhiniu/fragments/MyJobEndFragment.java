@@ -32,6 +32,11 @@ import com.jianzhiniu.network.WebServiceUIAsyncTask;
 import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.XListView;
 
+/**
+ * 我的兼职（已下架）
+ * @author Administrator
+ *
+ */
 public class MyJobEndFragment extends Fragment implements OnClickListener, XListView.IXListViewListener{
 
 	private Activity activity;

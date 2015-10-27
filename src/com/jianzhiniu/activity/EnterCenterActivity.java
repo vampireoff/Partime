@@ -31,6 +31,11 @@ import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.RoundImageView;
 import com.jianzhiniu.views.SelectPicPopupWindow;
 
+/**
+ * 企业个人中心
+ * @author Administrator
+ *
+ */
 public class EnterCenterActivity extends BaseActivity {
 
 	private Activity activity = EnterCenterActivity.this;
@@ -71,6 +76,7 @@ public class EnterCenterActivity extends BaseActivity {
 		linkemail = (EditText)findViewById(R.id.ec_email);
 		comintroduce = (EditText)findViewById(R.id.ec_introduce);
 		
+		//设置头像
 		imgurl = getExternalCacheDir() + "/e" + shared.getString("loginid", "") + ".png";
 		if (ImageUtil.isHave(imgurl)) {
 			imgBitmap = BitmapFactory.decodeFile(imgurl);
@@ -79,6 +85,7 @@ public class EnterCenterActivity extends BaseActivity {
 			//线程获取头像
 			new Thread(new mythread()).start();
 		}
+		
 		name.setText(shared.getString("companyname", ""));
 		linkman.setText(shared.getString("contactperson", ""));
 		linkphone.setText(shared.getString("mobile", ""));
@@ -102,6 +109,11 @@ public class EnterCenterActivity extends BaseActivity {
 		}
 	}
 	
+	/**
+	 * 获取头像的线程
+	 * @author Administrator
+	 *
+	 */
 	private class mythread implements Runnable{
 		@Override
 		public void run() {
@@ -128,7 +140,7 @@ public class EnterCenterActivity extends BaseActivity {
 				img.setImageBitmap(imgBitmap);
 				ImageUtil.savePNG(imgBitmap, imgurl);
 				break;
-			case 4:
+			case 4:		//上传头像
 				if (upBitmap != null) {
 					isPic = true;
 					ExecuteAsyncTask("uploadimage", mapUtil.UploadPicMap(shared.getString(
@@ -253,7 +265,7 @@ public class EnterCenterActivity extends BaseActivity {
 		case R.id.top_return:
 			this.finish();
 			break;
-		case R.id.top_righttext:
+		case R.id.top_righttext:	//提交信息
 			if (isEnable) {
 				if (TextUtils.isEmpty(name.getText()) || TextUtils.isEmpty(linkman.getText()) || TextUtils.isEmpty(linkemail.getText()) || 
 						TextUtils.isEmpty(linkphone.getText()) || TextUtils.isEmpty(comintroduce.getText())) {
@@ -271,7 +283,7 @@ public class EnterCenterActivity extends BaseActivity {
 			}
 			break;
 
-		case R.id.touxiang:
+		case R.id.touxiang:		//弹出头像选择对话框
 			if (isEnable) {
 				startActivityForResult(new Intent(activity,
 						SelectPicPopupWindow.class), 1);
@@ -342,6 +354,10 @@ public class EnterCenterActivity extends BaseActivity {
 		}
 	}
 	
+	/**
+	 * 设置输入框的状态
+	 * @param bool
+	 */
 	private void setEnable(boolean bool){
 		if (bool) {
 			txTextView.setVisibility(View.VISIBLE);

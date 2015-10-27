@@ -30,6 +30,11 @@ import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.XListView;
 
+/**
+ * 我的兼职（进行中）
+ * @author Administrator
+ *
+ */
 public class MyJobOnwayFragment extends Fragment implements XListView.IXListViewListener{
 
 	private Activity activity;

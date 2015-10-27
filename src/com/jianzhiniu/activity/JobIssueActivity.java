@@ -51,6 +51,11 @@ import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 import com.kyleduo.switchbutton.SwitchButton;
 
+/**
+ * 兼职发布界面
+ * @author Administrator
+ *
+ */
 public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 
 	private Activity activity = JobIssueActivity.this;
@@ -146,6 +151,9 @@ public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 		
 		switchButton.setOnCheckedChangeListener(changeListener);
 		
+		/**
+		 * 设置输入框可以滚动
+		 */
 		scrollView.setOnTouchListener(new OnTouchListener() {
 			
 			@Override
@@ -183,6 +191,9 @@ public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 		}
 	};
 	
+	/**
+	 * 历史兼职列表项的点击
+	 */
 	OnItemClickListener selectItemClick = new OnItemClickListener() {
 
 		@Override
@@ -235,7 +246,7 @@ public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 			}
 			break;
 			
-		case R.id.history_view:
+		case R.id.history_view:		//历史兼职
 			if (dialogView.getVisibility() == View.VISIBLE) {
 				dialogView.setVisibility(View.GONE);
 			}else {
@@ -249,7 +260,7 @@ public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 			}
 			break;
 			
-		case R.id.jobtype_view:
+		case R.id.jobtype_view:		//工作类型
 			webtype = "jt";
 			if (jtlist != null && jtlist.size() != 0) {
 				myHandler.sendEmptyMessage(3);
@@ -261,7 +272,7 @@ public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 		case R.id.jtcanclebtn:
 			alertDialog.dismiss();
 			break;
-		case R.id.timetype_view:
+		case R.id.timetype_view:	//时间类型
 			webtype = "tt";
 			if (ttlist != null && ttlist.size() != 0) {
 				myHandler.sendEmptyMessage(4);
@@ -270,7 +281,7 @@ public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 			}
 			break;
 			
-		case R.id.unitlinear:
+		case R.id.unitlinear:	//工资的单位
 			webtype = "ut";
 			if (utlist != null && utlist.size() != 0) {
 				myHandler.sendEmptyMessage(5);
@@ -283,13 +294,13 @@ public class JobIssueActivity extends BaseActivity implements LocationCallBack{
 			startActivityForResult(new Intent(this, SelectCitysActivity.class), 101);
 			break;
 			
-		case R.id.getloclinear:
+		case R.id.getloclinear:		//抓取定位
 			MyProgressDialog.showDialog(activity, 0);
 			myLocation = new MyLocationManager(JobIssueActivity.this.getApplicationContext(),
 					JobIssueActivity.this);
 			break;
 			
-		case R.id.issuejob_btn:
+		case R.id.issuejob_btn:		//发布按钮
 			if (TextUtils.isEmpty(jobtitle.getText()) || TextUtils.isEmpty(jobtypetext.getText()) 
 				 || TextUtils.isEmpty(timetypetext.getText()) || TextUtils.isEmpty(jobpeople.getText())
 				 || TextUtils.isEmpty(jobtreatment.getText()) || unittext.getText().

@@ -42,6 +42,11 @@ import com.jianzhiniu.utils.PinyinComparator;
 import com.jianzhiniu.views.IndexBar;
 import com.jianzhiniu.views.IndexBar.OnIndexSelectedListener;
 
+/**
+ * 城市选择界面
+ * @author Administrator
+ *
+ */
 public class SelectCitysActivity extends BaseActivity implements LocationCallBack{
 
 	private Activity activity = SelectCitysActivity.this;

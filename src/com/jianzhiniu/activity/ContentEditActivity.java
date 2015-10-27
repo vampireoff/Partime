@@ -22,6 +22,11 @@ import com.jianzhiniu.network.WebServiceUIAsyncTask;
 import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 
+/**
+ * ÄÚÈÝ±à¼­½çÃæ
+ * @author Administrator
+ *
+ */
 public class ContentEditActivity extends BaseActivity{
 
 	private Activity activity = ContentEditActivity.this;

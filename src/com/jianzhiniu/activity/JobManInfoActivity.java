@@ -35,6 +35,11 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
+/**
+ * 兼职管理界面
+ * @author Administrator
+ *
+ */
 public class JobManInfoActivity extends BaseActivity implements XListView.IXListViewListener{
 
 	private Activity activity = JobManInfoActivity.this;

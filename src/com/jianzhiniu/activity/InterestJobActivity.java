@@ -17,7 +17,7 @@ import com.jianzhiniu.config.MyApplication;
 import com.jianzhiniu.fragments.RecommendFragment;
 
 /**
- * 可能感兴趣界面
+ * 可能感兴趣界面，加载RecommendFragment的Activity
  * @author Administrator
  *
  */

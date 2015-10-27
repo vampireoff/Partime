@@ -7,6 +7,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ * Œ“µƒ ’≤ÿ
+ * @author Administrator
+ *
+ */
 public class MyCollectActivity extends BaseFragmentActivity{
 
 	private TextView centerView;

@@ -28,6 +28,11 @@ import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.nostra13.universalimageloader.core.display.FadeInBitmapDisplayer;
 
+/**
+ * 报名跟踪界面
+ * @author Administrator
+ *
+ */
 public class ApplyFollowActivity extends BaseActivity{
 
 	private Activity activity = ApplyFollowActivity.this;
@@ -54,7 +59,9 @@ public class ApplyFollowActivity extends BaseActivity{
 		setContentView(R.layout.apply_follow);
 		MyApplication.getInstance().addActivity(this);
 		
+		//提示框
 		myAlertDialog = new MyAlertDialog(activity, callback);
+		//图片显示控件初始化
 		loader.init(ImageLoaderConfiguration.createDefault(this));
 		//图片参数设置
 		options = new DisplayImageOptions.Builder()
@@ -88,6 +95,7 @@ public class ApplyFollowActivity extends BaseActivity{
 		round2 = (ImageView)findViewById(R.id.round2);
 		round3 = (ImageView)findViewById(R.id.round3);
 		
+		//设置取消按钮消失
 		if (intent.getStringExtra("status").equals("2") || intent.getStringExtra("status").equals("3") || 
 				intent.getStringExtra("status").equals("-1")) {
 			cancleView.setVisibility(View.GONE);
@@ -115,6 +123,7 @@ public class ApplyFollowActivity extends BaseActivity{
 		cancleView.setOnClickListener(this);
 	}
 	
+	//提示框确定按钮点击
 	AlertCallback callback = new AlertCallback() {
 		
 		@Override
@@ -135,9 +144,9 @@ public class ApplyFollowActivity extends BaseActivity{
 			break;
 		case R.id.cancle_text:
 			myAlertDialog.showMyAlertDialog(R.string.suretocancle);
-			
 			break;
 		case R.id.to_jobinfoview:
+			//点击进入工作详情界面
 			Intent jIntent = new Intent(this, JobInfoActivity.class);
 			if (intent.hasExtra("eid")) {
 				jIntent.putExtra("id", intent.getStringExtra("jobid"));
@@ -172,7 +181,7 @@ public class ApplyFollowActivity extends BaseActivity{
 				// TODO Auto-generated method stub
 				//成功获取数据，解析数据
 					MyProgressDialog.Dismiss();
-					if (webtype.equals("cancle")) {
+					if (webtype.equals("cancle")) {					//取消报名
 						rMap = JsonTool.isSuccessfuljson(result);
 						if (rMap == null) {
 							MyUtils.showToast2(activity, getResources().
@@ -191,7 +200,7 @@ public class ApplyFollowActivity extends BaseActivity{
 								round2.setImageResource(R.drawable.no);
 							}
 						}
-					}else if(webtype.equals("list")){
+					}else if(webtype.equals("list")){				//跟踪列表
 						list = JsonTool.ApplyFollowjson(result, "JobRegLgoList");
 						if (list == null) {
 							MyUtils.showToast2(activity, getResources().
@@ -221,7 +230,7 @@ public class ApplyFollowActivity extends BaseActivity{
 								}
 							}
 						}
-					}else {
+					}else {				//工作信息
 						infoMap = JsonTool.RegJobInfojson(result);
 						if (infoMap == null) {
 							MyUtils.showToast(activity, R.string.data_parse_error);

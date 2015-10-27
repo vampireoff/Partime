@@ -8,6 +8,11 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+/**
+ * 最新兼职界面
+ * @author Administrator
+ *
+ */
 public class NewestJobActivity extends BaseFragmentActivity{
 
 	private TextView centerView;

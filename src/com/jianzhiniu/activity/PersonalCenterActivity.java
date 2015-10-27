@@ -49,6 +49,11 @@ import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.RoundImageView;
 import com.jianzhiniu.views.SelectPicPopupWindow;
 
+/**
+ * 求职者个人中心界面
+ * @author Administrator
+ *
+ */
 @SuppressLint("InflateParams") 
 public class PersonalCenterActivity extends BaseActivity{
 	

@@ -17,6 +17,11 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+/**
+ * π»∏ËµÿÕºΩÁ√Ê
+ * @author Administrator
+ *
+ */
 public class GoogleMapActivity extends BaseFragmentActivity implements LocationListener {
 	
 	GoogleMap googleMap;

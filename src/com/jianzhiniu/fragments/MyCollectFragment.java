@@ -24,6 +24,11 @@ import com.jianzhiniu.adapter.NewjoblistAdapter;
 import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.XListView;
 
+/**
+ * Œ“µƒ ’≤ÿfragment
+ * @author Administrator
+ *
+ */
 public class MyCollectFragment extends Fragment implements OnClickListener, XListView.IXListViewListener{
 
 	private Activity activity;

@@ -29,6 +29,11 @@ import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.XListView;
 
+/**
+ * 我的申请界面
+ * @author Administrator
+ *
+ */
 public class MyApplyActivity extends BaseActivity implements XListView.IXListViewListener{
 
 	private Activity activity = MyApplyActivity.this;

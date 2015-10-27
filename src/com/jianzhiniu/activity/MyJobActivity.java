@@ -21,6 +21,11 @@ import com.jianzhiniu.config.MyApplication;
 import com.jianzhiniu.fragments.MyJobEndFragment;
 import com.jianzhiniu.fragments.MyJobOnwayFragment;
 
+/**
+ * 我的兼职界面
+ * @author Administrator
+ *
+ */
 public class MyJobActivity extends BaseFragmentActivity{
 
 	private TextView leftText, rightText, topcenter;

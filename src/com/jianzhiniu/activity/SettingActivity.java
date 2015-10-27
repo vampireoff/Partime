@@ -35,6 +35,11 @@ import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.MyAlertDialog.AlertCallback;
 import com.kyleduo.switchbutton.SwitchButton;
 
+/**
+ * …Ë÷√ΩÁ√Ê
+ * @author Administrator
+ *
+ */
 public class SettingActivity extends BaseActivity{
 
 	private TextView centerView;

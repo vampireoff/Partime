@@ -58,6 +58,11 @@ import com.jianzhiniu.views.AdBannerView;
 import com.jianzhiniu.views.MyAlertDialog;
 import com.jianzhiniu.views.MyAlertDialog.AlertCallback;
 
+/**
+ * Ö÷½çÃæfragment
+ * @author Administrator
+ *
+ */
 public class MainFragment extends Fragment implements OnClickListener{
 	
 	private Activity activity;

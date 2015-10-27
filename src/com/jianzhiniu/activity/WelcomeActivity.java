@@ -23,6 +23,11 @@ import com.jianzhiniu.config.MyApplication;
 import com.jianzhiniu.utils.MyLocationManager;
 import com.jianzhiniu.utils.MyLocationManager.LocationCallBack;
 
+/**
+ * ª∂”≠ΩÁ√Ê
+ * @author Administrator
+ *
+ */
 public class WelcomeActivity extends BaseActivity implements LocationCallBack{
 
 	private Button button_p, button_e;

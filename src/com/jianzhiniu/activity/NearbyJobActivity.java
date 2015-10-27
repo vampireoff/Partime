@@ -35,6 +35,11 @@ import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.XListView;
 
+/**
+ * 附近的兼职界面
+ * @author Administrator
+ *
+ */
 public class NearbyJobActivity extends BaseActivity implements 
 	LocationCallBack, XListView.IXListViewListener{
 

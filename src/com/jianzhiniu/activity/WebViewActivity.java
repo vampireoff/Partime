@@ -19,6 +19,11 @@ import android.widget.TextView;
 
 import com.jianzhiniu.config.MyApplication;
 
+/**
+ * ä¯ÀÀÆ÷½çÃæ
+ * @author Administrator
+ *
+ */
 public class WebViewActivity extends BaseActivity{
 
 	private ProgressBar progressBar;

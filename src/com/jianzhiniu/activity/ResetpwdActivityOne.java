@@ -24,6 +24,11 @@ import com.jianzhiniu.network.WebServiceUIAsyncTask;
 import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 
+/**
+ * ÷ÿ÷√√‹¬ÎΩÁ√Ê
+ * @author Administrator
+ *
+ */
 public class ResetpwdActivityOne extends BaseActivity{
 
 	private Context activity = ResetpwdActivityOne.this;

@@ -23,7 +23,6 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -45,6 +44,11 @@ import com.jianzhiniu.utils.MyUtils;
 import com.jianzhiniu.views.MyProgressDialog;
 import com.jianzhiniu.views.RoundImageView;
 
+/**
+ * µÇÂ¼½çÃæ
+ * @author Administrator
+ *
+ */
 public class LoginActivity extends BaseActivity implements Callback, PlatformActionListener{
 	private Button button_login, button_fb, button_tw;
 	private Context activity = LoginActivity.this;
