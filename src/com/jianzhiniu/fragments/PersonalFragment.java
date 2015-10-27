@@ -110,10 +110,8 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 		if (intent.getBooleanExtra("type", false)) {
 			isE = true;
 			shared = activity.getSharedPreferences("einfo", Context.MODE_PRIVATE);
-			imgurl = activity.getExternalCacheDir() + "/e" + shared.getString("loginid", "") + ".png";
 		}else {
 			shared = activity.getSharedPreferences("info", Context.MODE_PRIVATE);
-			imgurl = activity.getExternalCacheDir() + "/" + shared.getString("loginid", "") + ".png";
 		}
 		
 		if (isE) {
@@ -142,11 +140,6 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 		touxiang = (RoundImageView)view.findViewById(R.id.roundimg);
 		name = (TextView)view.findViewById(R.id.p_name);
 		phone = (TextView)view.findViewById(R.id.p_number);
-		
-		if (!ImageUtil.isHave(imgurl)) {
-			//获取头像
-			new Thread(new mythread()).start();
-		}
 		
 		checkupdate.setOnClickListener(this);
 		personalLayout.setOnClickListener(this);
@@ -200,11 +193,7 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 		// TODO Auto-generated method stub
 		super.onResume();
 		
-		if (ImageUtil.isHave(imgurl)) {
-			picBitmap = BitmapFactory.decodeFile(imgurl);
-			touxiang.setImageBitmap(picBitmap);
-		}
-		
+		//显示号码
 		if (shared.getString("mobile", "").equals("")) {
 			phone.setVisibility(View.GONE);
 		}else {
@@ -212,7 +201,10 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 			phone.setVisibility(View.VISIBLE);
 		}
 		
+		//显示名字或提示
 		if (isE) {
+			imgurl = activity.getExternalCacheDir() + "/e" + shared.getString("loginid", "") + ".png";
+
 			if (shared.getString("companyname", "").equals("")) {
 				name.setText(activity.getString(R.string.no_comanyname));
 				name.setTextColor(activity.getResources().getColor(R.color.red));
@@ -224,6 +216,8 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 				start.setVisibility(View.VISIBLE);
 			}
 		}else {
+			imgurl = activity.getExternalCacheDir() + "/" + shared.getString("loginid", "") + ".png";
+
 			if (Myconfig.isLogin) {
 				
 				if (shared.getString("name", "").equals("")) {
@@ -238,7 +232,15 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 				name.setText(activity.getString(R.string.notlogin));
 				name.setTextColor(activity.getResources().getColor(R.color.light_red));
 			}
-			
+		}
+		
+		//设置头像
+		if (ImageUtil.isHave(imgurl)) {
+			picBitmap = BitmapFactory.decodeFile(imgurl);
+			touxiang.setImageBitmap(picBitmap);
+		}else {
+			//获取头像
+			new Thread(new mythread()).start();
 		}
 	}
 	
@@ -581,6 +583,7 @@ public class PersonalFragment extends Fragment implements OnClickListener{
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setDataAndType(Uri.parse("file://" + apkFile.toString()),
 				"application/vnd.android.package-archive");
+		i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(i);
 	}
 	

@@ -89,6 +89,7 @@ public class MainFragment extends Fragment implements OnClickListener{
 	private SharedPreferences shared, eshared;
 	private MyAlertDialog myAlertDialog, myAlertDialog2;
 	private Intent toIntent;
+	private boolean dissuccess;
 	
 	@Override
 	public void onAttach(Activity activity) {
@@ -181,7 +182,6 @@ public class MainFragment extends Fragment implements OnClickListener{
 		}
 		
 		mapUtil = new MapUtil(activity);
-		ExecuteAsyncTask("GetAdvertList", mapUtil.AccesskeyMap());
 		ExecuteAsyncTask2("GetVersion", mapUtil.CheckVersionMap());
 		
 		reLayout1.setOnClickListener(this);
@@ -189,6 +189,16 @@ public class MainFragment extends Fragment implements OnClickListener{
 		reLayout3.setOnClickListener(this);
 		
 		return view;
+	}
+	
+	@Override
+	public void onResume() {
+		// TODO Auto-generated method stub
+		super.onResume();
+		if (!dissuccess) {
+			ExecuteAsyncTask("GetAdvertList", mapUtil.AccesskeyMap());
+		}
+		
 	}
 	
 	/**
@@ -461,6 +471,7 @@ public class MainFragment extends Fragment implements OnClickListener{
 		Intent i = new Intent(Intent.ACTION_VIEW);
 		i.setDataAndType(Uri.parse("file://" + apkFile.toString()),
 				"application/vnd.android.package-archive");
+		i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 		startActivity(i);
 	}
 	
@@ -501,6 +512,7 @@ public class MainFragment extends Fragment implements OnClickListener{
 				}
 				mAdBannerView.setClickFlag(AD_ONCLICK);
 				mAdBannerView.init(mHandler, mAdInfoList);
+				dissuccess = true;
 				break;
 				// ÕýÔÚÏÂÔØ
 			case DOWNLOAD:

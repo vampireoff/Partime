@@ -20676,12 +20676,14 @@ com.jianzhiniu.fragments.MainFragment -> com.jianzhiniu.fragments.ai:
     com.jianzhiniu.views.MyAlertDialog myAlertDialog -> G
     com.jianzhiniu.views.MyAlertDialog myAlertDialog2 -> H
     android.content.Intent toIntent -> I
+    boolean dissuccess -> J
     com.jianzhiniu.views.MyAlertDialog$AlertCallback callback -> a
     com.jianzhiniu.views.MyAlertDialog$AlertCallback callback2 -> b
-    android.os.Handler mHandler -> J
+    android.os.Handler mHandler -> K
     void onAttach(android.app.Activity) -> onAttach
     void onCreate(android.os.Bundle) -> onCreate
     android.view.View onCreateView(android.view.LayoutInflater,android.view.ViewGroup,android.os.Bundle) -> onCreateView
+    void onResume() -> onResume
     void ExecuteAsyncTask(java.lang.String,java.util.Map) -> a
     void ExecuteAsyncTask2(java.lang.String,java.util.Map) -> b
     void checkUpdate() -> a
@@ -20699,19 +20701,20 @@ com.jianzhiniu.fragments.MainFragment -> com.jianzhiniu.fragments.ai:
     java.util.ArrayList access$5(com.jianzhiniu.fragments.MainFragment) -> e
     com.jianzhiniu.views.AdBannerView access$6(com.jianzhiniu.fragments.MainFragment) -> f
     android.os.Handler access$7(com.jianzhiniu.fragments.MainFragment) -> g
-    android.app.ProgressDialog access$8(com.jianzhiniu.fragments.MainFragment) -> h
-    int access$9(com.jianzhiniu.fragments.MainFragment) -> i
-    void access$10(com.jianzhiniu.fragments.MainFragment) -> j
-    java.util.Map access$11(com.jianzhiniu.fragments.MainFragment) -> k
-    java.lang.String access$12(com.jianzhiniu.fragments.MainFragment) -> l
-    java.io.File access$13(com.jianzhiniu.fragments.MainFragment) -> m
-    void access$14(com.jianzhiniu.fragments.MainFragment,int) -> a
-    boolean access$15(com.jianzhiniu.fragments.MainFragment) -> n
-    void access$16(com.jianzhiniu.fragments.MainFragment,java.util.List) -> a
-    void access$17(com.jianzhiniu.fragments.MainFragment,java.util.Map) -> a
-    void access$18(com.jianzhiniu.fragments.MainFragment,java.lang.String) -> a
-    java.lang.String access$19(com.jianzhiniu.fragments.MainFragment) -> o
-    void access$20(com.jianzhiniu.fragments.MainFragment,java.io.File) -> a
+    void access$8(com.jianzhiniu.fragments.MainFragment,boolean) -> a
+    android.app.ProgressDialog access$9(com.jianzhiniu.fragments.MainFragment) -> h
+    int access$10(com.jianzhiniu.fragments.MainFragment) -> i
+    void access$11(com.jianzhiniu.fragments.MainFragment) -> j
+    java.util.Map access$12(com.jianzhiniu.fragments.MainFragment) -> k
+    java.lang.String access$13(com.jianzhiniu.fragments.MainFragment) -> l
+    java.io.File access$14(com.jianzhiniu.fragments.MainFragment) -> m
+    void access$15(com.jianzhiniu.fragments.MainFragment,int) -> a
+    boolean access$16(com.jianzhiniu.fragments.MainFragment) -> n
+    void access$17(com.jianzhiniu.fragments.MainFragment,java.util.List) -> a
+    void access$18(com.jianzhiniu.fragments.MainFragment,java.util.Map) -> a
+    void access$19(com.jianzhiniu.fragments.MainFragment,java.lang.String) -> a
+    java.lang.String access$20(com.jianzhiniu.fragments.MainFragment) -> o
+    void access$21(com.jianzhiniu.fragments.MainFragment,java.io.File) -> a
 com.jianzhiniu.fragments.MainFragment$1 -> com.jianzhiniu.fragments.aj:
     com.jianzhiniu.fragments.MainFragment this$0 -> a
     void ybutton() -> a
