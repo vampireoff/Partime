@@ -6,7 +6,6 @@ import java.io.IOException;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.os.Environment;
 import android.text.TextUtils;
 
 public class ImageCacheUtils
@@ -19,7 +18,7 @@ public class ImageCacheUtils
 	public static String picUrl;
 
 	/**
-	 * 根据url从缓存加载图�??
+	 * 根据url从缓存加载图�??
 	 * 
 	 * @param url
 	 * @return
@@ -75,7 +74,7 @@ public class ImageCacheUtils
 	}
 
 	/**
-	 * 根据指定的文件路径加载图�??
+	 * 根据指定的文件路径加载图�??
 	 * 
 	 * @param path
 	 * @return
@@ -89,7 +88,7 @@ public class ImageCacheUtils
 
 			BitmapFactory.Options bfOptions = new BitmapFactory.Options();
 			bfOptions.inDither = false;
-			bfOptions.inPurgeable = true;// 使得内存可以被回�??
+			bfOptions.inPurgeable = true;// 使得内存可以被回�??
 			bfOptions.inTempStorage = new byte[12 * 1024]; // 临时存储
 			Bitmap bitmap = BitmapFactory.decodeFile(path, bfOptions);
 			return bitmap;
@@ -113,7 +112,7 @@ public class ImageCacheUtils
 	}
 
 	/**
-	 * 保存图片到指定位�??
+	 * 保存图片到指定位�??
 	 * 
 	 * @param bitmap
 	 * @param path
@@ -168,7 +167,7 @@ public class ImageCacheUtils
 	 * 根据文件路径得到文件目录和文件名
 	 * 
 	 * @param url
-	 * @return String[0]-目录，String[1]-文件�??
+	 * @return String[0]-目录，String[1]-文件�??
 	 */
 	private static String[] getDirAndFileName(String url)
 	{

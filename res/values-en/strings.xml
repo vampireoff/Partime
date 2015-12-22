@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- 电话区号  中国-->
+    <string name="qh">86</string>
+    <!-- 新西兰
+    <string name="qh">64</string>
+     -->
+     
+    <string name="phoneregisted">The number has been registered</string>
+    <string name="updatesuccess">Update successful</string>
+    <string name="clicklistitem">Click on the corresponding info for reply</string>
+    <string name="input_email">Please type in your email</string>
+    <string name="changetx">Replace portrait</string>
+    <string name="detailcontent">Details</string>
+    <string name="noissuejob">You have not had a job</string>
+    <string name="wsjl">Please complete resume first!</string>
+    <string name="wsqyxx">Please complete employer description first!</string>
+    <string name="all">All</string>
+    <string name="personalcenterm">Personal Center</string>
+    <string name="enterprisecenterm">Personal Center</string>
+    <string name="newestjobm">Latest Jobs</string>
+    <string name="jobmanagem">Jobs Management</string>
+    <string name="input_phonenums">Your phone number</string>
+    <string name="verifynuml">verification code</string>
+    <string name="prompt">Tip</string>
+    <string name="choosetypes">Category</string>
+    <string name="rec_status">Recruitment Situation</string>
+    <string name="Direct_entry">Direct Entry</string>
+    <string name="notlogin">not login</string>
+    <string name="loginfirst">Please login first!</string>
+    
+    <string name="app_name">Partime</string>
+    <string name="jobseeker_enter">Job Seeker</string>
+    <string name="suretocancle">Are you sure you want to cancel this application?</string>
+    <string name="suretohire">Are you sure you want to hire?</string>
+    <string name="suretorefuse">Are you sure you want to refuse?</string>
+    <string name="suretozm">Job seekers will not be able to see this advertisement anymore. Are you sure you want to continue?</string>
+    <string name="suretoxj">Are you sure you want to remove this job list?</string>
+    <string name="hidephone">Do not display my phone number</string>
+    <string name="displayphone">Display my phone number</string>
+    <string name="suretoapply">Are you sure you want to apply?</string>
+    <string name="soft_updating">Updating...</string>
+    <string name="checknew">Found new version</string>
+    <string name="updatenow">Update</string>
+    <string name="consultlist">Enquire list</string>
+    <string name="noupdatenow">Later</string>
+    <string name="vissuetime">Release time：</string>
+    <string name="versionnum">Version：</string>
+    <string name="updatecontent">What is new：</string>
+    <string name="clickselect">Click to choose</string>
+    <string name="isapplyed">Applied</string>
+    <string name="p_input">Type in</string>
+    <string name="hire">Hire</string>
+    <string name="refuse">Refuse</string>
+    <string name="ishired">Hired</string>
+    <string name="isrefused">Refused</string>
+    <string name="applycount">Applicant：</string>
+    <string name="shqcount">Applicant：</string>
+    <string name="lycount">Hired：</string>
+    <string name="jjcount">Refused：</string>
+    <string name="shqcount0">Applicant：0</string>
+    <string name="lycount0">Hired：0</string>
+    <string name="jjcount0">Refused：0</string>
+    <string name="takephoto">Take photos</string>
+    <string name="selectfromgallery">Choose from photos</string>
+    <string name="pic_outofmem">Oversize image</string>
+    <string name="info_lack">Please fill in all required fields</string>
+    <string name="input_newpwda">Enter again</string>
+    <string name="new_pwd">New password：</string>
+    <string name="sure_pwd">Repeat password：</string>
+    <string name="current_pwd">Current Password：</string>
+    <string name="input_oldpwd">Please type in your current password</string>
+    <string name="content_notnull">Content can not be empty</string>
+    <string name="enterprise_enter">&#160;Employer&#160;</string>
+    <string name="login">Login</string>
+    <string name="account">Account</string>
+    <string name="password">Password</string>
+    <string name="newpassword">Password</string>
+    <string name="remember">Remember</string>
+    <string name="returnback">Back</string>
+    <string name="just">just</string>
+    <string name="yesterday">yesterday</string>
+    <string name="hourago">&#160;hours ago</string>
+    <string name="hourago1">&#160;hour ago</string>
+    <string name="dayago">&#160;days ago</string>
+    <string name="minuteago">&#160;minutes ago</string>
+    <string name="minuteago1">&#160;minute ago</string>
+    <string name="pleaseinputall">Please fill in all required fields</string>
+    <string name="titlenotcontain">Title can not include quotation marks</string>
+    <string name="input_account">Type in your account</string>
+    <string name="input_phonenum">Please type in your mobile number</string>
+    <string name="input_true_phonenum">Please type in your correct mobile number</string>
+    <string name="input_verifynum">Type in the verification code</string>
+    <string name="input_pwd">Type in your password</string>
+    <string name="input_newpwd">Type in your new password</string>
+    <string name="click_exit">Press again to exit</string>
+    
+    <string name="auth_cancel">Authorization canceled</string>
+    <string name="auth_error">Authorization error</string>
+    <string name="auth_complete">Authorization completed, login now...</string>
+    <string name="register_account">Register</string>
+    <string name="forget_pwd">Forgot password?</string>
+    <string name="no_net">There is no internet connection.</string>
+    <string name="timeout">Request timed out, please check your network connection</string>
+    <string name="iserror">Request timed out, please check your network connection</string>
+    <string name="seekregister">Register Account</string>
+    <string name="enterpriseregister">Register Account</string>
+    <string name="collect">Collect</string>
+    <string name="phonenum">Phone</string>
+    <string name="phonenum_notnull">Mobile number can not be empty</string>
+    <string name="verifynum_notnull">Verification code can not be empty</string>
+    <string name="pwd_notnull">Password can not be empty</string>
+    <string name="mustagree">You must agree to the terms and conditions to proceed</string>
+    <string name="verifynum">Code</string>
+    <string name="get_verifynum">Get code</string>
+    <string name="alreadyread">I have read and agree to the&#160;</string>
+    <string name="agreement">terms and conditions</string>
+    <string name="register">Register</string>
+    <string name="register_success">Register success</string>
+    <string name="register_fail">Register failed</string>
+    <string name="data_parse_error">Data parsing error</string>
+    <string name="verify_send_success">Verification code sent via text message successfully</string>
+    <string name="verify_true">Correct verification code</string>
+    <string name="verify_error">Verification code error</string>
+    <string name="loading">loading</string>
+    <string name="wait">wait&#160;</string>
+    <string name="resetpwd">Reset Password</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="reconfirm">Reconfirm</string>
+    <string name="reinput_newpwd">Type in again</string>
+    <string name="differentpwd">Two passwords are not the same</string>
+    <string name="input_your_verifynum">Please type in the code you received</string>
+    <string name="alterpwd_success">Password changed successfully</string>
+    <string name="firstpage">Home</string>
+    <string name="newestjob">Latest</string>
+    <string name="assistant">Assistant</string>
+    <string name="personalcenter">Me</string>
+    <string name="maybeinterest">You may be interested</string>
+    <string name="nearjob">Jobs near me</string>
+    <string name="choosetime">Job type</string>
+    <string name="choosetype">Work category</string>
+    <string name="myapply">My Application</string>
+    <string name="newnotice">New Notification</string>
+    <string name="newmessage">New Message</string>
+    <string name="myjob">My Jobs</string>
+    <string name="reply">Reply</string>
+    <string name="cancleapply">Cancel</string>
+    <string name="applyfollow">Track Application</string>
+    <string name="successsend">Successfully applied</string>
+    <string name="waitforlooked">Unread</string>
+    <string name="noapply">Not apply</string>
+    <string name="waitconfirm">Waitting to be confirmed</string>
+    <string name="sure">OK</string>
+    <string name="cancle">Cancel</string>
+    <string name="chooseall">*Select all</string>
+    <string name="mycollect">My Shortlist</string>
+    <string name="no_personname">Username is not set</string>
+    <string name="no_comanyname">Company name is not set</string>
+    <string name="suggestion_feedback">Feedback</string>
+    <string name="setting">Settings</string>
+    <string name="checkupdate">Check for new version</string>
+    <string name="exit_account">Logout</string>
+    <string name="header_hint_refresh_normal">Pull to refresh</string>
+    <string name="header_hint_refresh_ready">Release to refresh</string>
+    <string name="header_hint_refresh_loading">Refreshing&#8230;</string>
+    <string name="header_hint_refresh_time">Time：</string>
+    <string name="footer_hint_load_normal">Load more</string>
+    <string name="footer_hint_load_ready">Release to load more</string>
+    <string name="choosecity">Select City</string>
+    <string name="search">search</string>
+    <string name="input_city">Type in city name</string>
+    <string name="getlocationing">Locating&#8230;</string>
+    <string name="locationfail">Failed to locate</string>
+    <string name="recommendjob">Recommended Jobs</string>
+    <string name="authjob">Verified Jobs</string>
+    <string name="issuecompany">Listed by：</string>
+    <string name="recruitnumber">Positions：</string>
+    <string name="payoffer">Salary：</string>
+    <string name="worktime">Work hour：</string>
+    <string name="workcontent">Job description</string>
+    <string name="workplace">Job location：</string>
+    <string name="linkman">Linkman：</string>
+    <string name="linknumber">Phone：</string>
+    <string name="consult">Enquiry</string>
+    <string name="consultreply">Enquiry Reply</string>
+    <string name="jobconsult">Job Enquiry</string>
+    <string name="jobapply">Apply</string>
+    <string name="gy">Total&#160;</string>
+    <string name="tzx">&#160;enquiries</string>
+    <string name="jobinfo">&#160;&#160;&#160;&#160;&#160;Job info&#160;&#160;&#160;&#160;&#160;</string>
+    <string name="enterpriseinfo">Employer info</string>
+    <string name="complain">Complain</string>
+    <string name="apply">Apply</string>
+    <string name="personal_info">Personal Info</string>
+    <string name="personal_resume">Resume</string>
+    <string name="edit_resume">Edit resume</string>
+    <string name="edit_info">Edit info</string>
+    <string name="jobobjective">Job Objective</string>
+    <string name="self_intro">Self Introduction</string>
+    <string name="experience">Work Experience</string>
+    <string name="contactway">Contact Info</string>
+    <string name="name">Name：</string>
+    <string name="sex">Sex：</string>
+    <string name="age">Age：</string>
+    <string name="height">Height：</string>
+    <string name="city">City：</string>
+    <string name="birthday">Birthday：</string>
+    <string name="school">Education：</string>
+    <string name="email">Email：</string>
+    <string name="phonenumber">Phone：</string>
+    <string name="relative_intro">Introduction</string>
+    <string name="company_intro">Company Introduction：</string>
+    <string name="input_enterintro">Please tell job seekers about your company</string>
+    <string name="input_complainreason">Reason to complain.</string>
+    <string name="submit_complain">Submit Complaint</string>
+    <string name="submit_consult">Submit Enquiry</string>
+    <string name="edit_reply">Edit Reply</string>
+    <string name="choosedate">Select date</string>
+    <string name="input_consultcontent">Please type in your enquiry.</string>
+    <string name="input_replycontent">Please type in your reply.</string>
+    <string name="input_feedback">Please type in your feedback.</string>
+    <string name="input_companyname">Please type in your company name</string>
+    <string name="messagepush">Notification</string>
+    <string name="alterpwd">Change password</string>
+    <string name="areyouexit">Are you sure you want to exit?</string>
+    <string name="messagepush_open">Notification allow</string>
+    <string name="messagepush_close">Notification not allow</string>
+    <string name="onway">Ongoing</string>
+    <string name="ending">Closed</string>
+    <string name="man">Male</string>
+    <string name="woman">Female</string>
+    <string name="nownewest">It is already the latest version</string>
+    <string name="issuejob">List a job</string>
+    <string name="applyauth">Apply for verification</string>
+    <string name="jobmanage">Management</string>
+    <string name="enterprisecenter">Me</string>
+    <string name="historymodel">Job listing template</string>
+    <string name="jobtitle">Job title：</string>
+    <string name="jobtype">Work category：</string>
+    <string name="timetype">Job type：</string>
+    <string name="jobtime">Work hour：</string>
+    <string name="jobpeoplecount">Positions：</string>
+    <string name="jobtreatment">Salary：</string>
+    <string name="jobdescribe">Job description：</string>
+    <string name="jobaddress">Job location：</string>
+    <string name="getaddress">Current location</string>
+    <string name="linkemail">Email：</string>
+    <string name="zxphone">Phone：</string>
+    <string name="offerphonezx">Allow contact by phone</string>
+    <string name="getlocation">Get location</string>
+    <string name="selectcity">Select city：</string>
+    <string name="issue">Publish</string>
+    <string name="iscalled">Recruiting</string>
+    <string name="underway">Ongoing</string>
+    <string name="soldout">Removed</string>
+    <string name="xj">Remove</string>
+    <string name="zhm">Filled</string>
+    <string name="allname">Name</string>
+    <string name="linkphones">Phone</string>
+    <string name="state">Status</string>
+    <string name="jobdetail">Job description</string>
+    <string name="please_select">Please select</string>	
+    
+    <string-array name="assistlist">
+        <item>@string/newnotice</item>
+        <item>@string/newmessage</item>
+        <item>@string/myapply</item>
+        <item>@string/myjob</item>
+    </string-array>
+    
+    <string-array name="citys">
+        <item>Auckland</item>
+        <item>Christchurch</item>
+        <item>Dunedin</item>
+        <item>Hamilton</item>
+        <item>Hastings</item>
+        <item>Invercargill</item>
+        <item>Lower Hutt</item>
+        <item>Napier</item>
+        <item>Nelson</item>
+        <item>New Plymouth</item>
+        <item>North Island</item>
+        <item>Others</item>
+        <item>Palmerston North</item>
+        <item>Pokeno</item>
+        <item>Porirua</item>
+        <item>South Island</item>
+        <item>Tauranga</item>
+        <item>Timaru</item>
+        <item>Upper Hutt</item>
+        <item>Wanganui</item>
+        <item>Wellington</item>
+        <item>Whangarei</item>
+    </string-array>
+</resources>
